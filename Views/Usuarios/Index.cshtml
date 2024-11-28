@@ -1,0 +1,165 @@
+﻿@model IEnumerable<Glamping_Addventure2.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Lista de Usuarios";
+}
+
+<div class="container">
+
+    <div class="d-flex justify-content-end mb-3">
+        <a asp-action="Create" asp-controller="Usuarios" class="btn btn-success btn-sm">
+            <i class="fas fa-plus"></i> Agregar Usuario
+        </a>
+    </div>
+
+    <!-- Enlace para cargar Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+
+    <table id="myTable" class="table table-bordered table-striped shadow">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Tipo de Documento</th>
+                <th>Número de Documento</th>
+                <th>Teléfono</th>
+                <th>Dirección</th>
+                <th>Rol</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var usuario in Model)
+            {
+                <tr>
+                    <td>@usuario.NombreUsuario</td>
+                    <td>@usuario.Apellido</td>
+                    <td>@usuario.Email</td>
+                    <td>@usuario.TipoDocumento</td>
+                    <td>@usuario.NumeroDocumento</td>
+                    <td>@usuario.Telefono</td>
+                    <td>@usuario.Direccion</td>
+                    <td>@usuario.IdrolNavigation?.Nombre</td>
+                    <td>
+                        <a asp-action="Edit" asp-controller="Usuarios" asp-route-id="@usuario.Idusuario" class="btn btn-success btn-sm">
+                            <i class="fas fa-pencil-alt"></i>
+                        </a>
+                        <a asp-action="Delete" asp-controller="Usuarios" asp-route-id="@usuario.Idusuario" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Enlaces de DataTables -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable({
+            "paging": true,
+            "searching": true,
+            "ordering": true,
+            "pageLength": 5,
+        });
+    });
+</script>
+<style>
+    /* Fondo del sitio */
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #a5dfa4 0%, #d5ffd2 100%); /* Suavizado del gradiente con los nuevos colores */
+        color: #1a4a5a;
+    }
+
+    /* Contenedor principal */
+    .container {
+        max-width: 1300px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 12px; /* Bordes más redondeados */
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+        margin-top: 20px;
+    }
+
+    /* Tabla de datos */
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        background-color: #f9f9f9; /* Fondo más claro */
+    }
+
+    /* Encabezado de la tabla */
+    th {
+        background-color: #76bf76; /* Color verde principal */
+        color: #ffffff;
+        font-weight: bold;
+        padding: 12px;
+        border: 1px solid #dcdcdc;
+        text-align: center;
+    }
+
+    /* Celdas de datos */
+    td {
+        background-color: #ffffff;
+        color: #1a4a5a;
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #e3e3e3;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Filas alternas */
+    tbody tr:nth-child(odd) td {
+        background-color: #e9f7ec; /* Fila alterna en un verde suave */
+    }
+
+    /* Efecto hover */
+    tbody tr:hover td {
+        background-color: #bdefbb; /* Verde suave cuando se pasa el mouse */
+    }
+
+    /* Estilos de botones */
+    .btn {
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 8px; /* Bordes más suaves en botones */
+        padding: 10px 15px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border: none;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border: none;
+    }
+
+    .btn i {
+        margin-right: 4px;
+    }
+
+    .btn:hover {
+        opacity: 0.85;
+        transform: scale(1.05); /* Aumento en el tamaño al hacer hover */
+    }
+
+    .btn-success:hover {
+        background-color: #76bf76; /* Verde más brillante al pasar el mouse */
+    }
+
+    .btn-danger:hover {
+        background-color: #ff6f6f; /* Rojo más brillante al pasar el mouse */
+    }
+</style>

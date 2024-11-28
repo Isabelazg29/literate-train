@@ -1,0 +1,232 @@
+﻿@model IEnumerable<Glamping_Addventure2.Models.Role>
+
+@{
+    ViewData["Title"] = "Roles";
+}
+
+
+<div class="container">
+    <div class="d-flex justify-content-end mb-3">
+        <a asp-action="Create" class="btn btn-success btn-sm">
+            <i class="fas fa-plus"></i> Crear Nuevo Rol
+        </a>
+    </div>
+
+    <!-- Enlace para cargar Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+
+    
+    <table id="myTable" class="table table-bordered table-striped shadow">
+        <!-- Añadido striped para filas alternas -->
+        <thead class="thead-dark">
+            <!-- Encabezado de tabla oscuro -->
+            <tr>
+                <th>Nombre</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+      <tbody>
+    @foreach (var rol in Model)
+    {
+        <tr data-id="@rol.Idrol" class="@(rol.IsActive ? "" : "table-danger")">
+            <td>@rol.Nombre</td>
+                    <td>
+                        <input type="checkbox" class="toggle-active" data-id="@rol.Idrol" @(rol.IsActive ? "checked" : "") />
+                    </td>
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@rol.Idrol" class="btn btn-success btn-sm">
+                    <i class="fas fa-pencil-alt"></i>
+                </a>
+                <a asp-action="Delete" asp-route-id="@rol.Idrol" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash"></i>
+                </a>
+            </td>
+        </tr>
+    }
+</tbody>
+
+    </table>
+</div>
+
+<!-- Enlaces de DataTables -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function initializeDataTable() {
+        $('#myTable').DataTable({
+            "destroy": true,          // Permite destruir la tabla previa
+            "paging": true,
+            "searching": true,
+            "ordering": true,
+            "pageLength": 5,
+        });
+    }
+
+    $(document).ready(function () {
+        initializeDataTable();
+    });
+
+    $(document).ready(function () {
+        // Inicializar DataTable
+        initializeDataTable();
+
+        <script>
+            $(document).ready(function () {
+                $('#myTable').DataTable({
+                    "paging": true,
+                    "searching": true,
+                    "ordering": true,
+                    "pageLength": 5
+                });
+
+                // Manejar el cambio de estado
+                $('.toggle-active').on('change', function () {
+                    const Idrol = $(this).closest('tr').data('id');
+                    const isActive = $(this).is(':checked');
+
+                    $.ajax({
+                        type: 'POST',
+                        url: '/Roles/ToggleActive',
+                        data: { id: Idrol, isActive: isActive },
+                        success: function (response) {
+                            alert(response.message);
+                            if (!response.success) {
+                                location.reload(); // Recargar si falla
+                            }
+                        },
+                        error: function () {
+                            alert('Error al intentar cambiar el estado.');
+                        }
+                    });
+                });
+            });
+
+</script>
+
+<style>
+    /* Fondo del sitio */
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%);
+        color: #1a4a5a;
+    }
+
+    /* Estilos para el contenedor */
+    .container {
+        max-width: 1300px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Tabla */
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        background-color: #f8f9fa; /* Fondo claro para la tabla */
+    }
+
+    /* Encabezado de la tabla */
+    th {
+        background-color: #1a4a5a; /* Verde oscuro para encabezado */
+        color: #000000; /* Texto negro en el encabezado */
+        font-weight: bold;
+        padding: 12px;
+        border: 1px solid #dcdcdc; /* Borde gris claro */
+    }
+
+    /* Celdas del cuerpo de la tabla */
+    td {
+        background-color: #ffffff; /* Fondo blanco */
+        color: #1a4a5a; /* Color de texto verde oscuro */
+        padding: 12px;
+        text-align: center; /* Centrar el contenido de las celdas */
+        border: 1px solid #e3e3e3; /* Bordes suaves para las celdas */
+        transition: background-color 0.3s ease;
+    }
+
+    /* Estilo de filas alternas */
+    tbody tr:nth-child(odd) td {
+        background-color: #e9f7ec; /* Verde claro para filas alternas */
+    }
+
+    /* Hover para filas */
+    tbody tr:hover td {
+        background-color: #c8e6c9; /* Fondo verde suave en hover */
+    }
+
+    /* Botones de acción */
+    .btn {
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border: none;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border: none;
+    }
+
+    .btn:hover {
+        opacity: 0.85; /* Opacidad en hover */
+    }
+
+    /* Checkbox deslizante */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 24px;
+    }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 24px;
+    }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+    input:checked + .slider {
+        background-color: #28a745; /* Verde para toggle activado */
+    }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+</style>
+
