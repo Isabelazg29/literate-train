@@ -3,16 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\isabe\\Downloads\\Glamping_Addventure2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28F30632-6D1B-4D06-BC14-E6A9D674F2C5}|Glamping_Addventure2.csproj|c:\\users\\isabe\\downloads\\rolesyusuariosreparaos-main\\views\\roles\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{28F30632-6D1B-4D06-BC14-E6A9D674F2C5}|..\\Rolesyusuariosreparaos-main\\Glamping_Addventure2.csproj|c:\\users\\isabe\\downloads\\rolesyusuariosreparaos-main\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28F30632-6D1B-4D06-BC14-E6A9D674F2C5}|Glamping_Addventure2.csproj|c:\\users\\isabe\\downloads\\rolesyusuariosreparaos-main\\views\\roles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{28F30632-6D1B-4D06-BC14-E6A9D674F2C5}|..\\Rolesyusuariosreparaos-main\\Glamping_Addventure2.csproj|c:\\users\\isabe\\downloads\\rolesyusuariosreparaos-main\\models\\paquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28F30632-6D1B-4D06-BC14-E6A9D674F2C5}|Glamping_Addventure2.csproj|c:\\users\\isabe\\downloads\\rolesyusuariosreparaos-main\\views\\habitacions\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{28F30632-6D1B-4D06-BC14-E6A9D674F2C5}|..\\Rolesyusuariosreparaos-main\\Glamping_Addventure2.csproj|c:\\users\\isabe\\downloads\\rolesyusuariosreparaos-main\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28F30632-6D1B-4D06-BC14-E6A9D674F2C5}|Glamping_Addventure2.csproj|c:\\users\\isabe\\downloads\\rolesyusuariosreparaos-main\\views\\inicio\\iniciarsesion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{28F30632-6D1B-4D06-BC14-E6A9D674F2C5}|..\\Rolesyusuariosreparaos-main\\Glamping_Addventure2.csproj|c:\\users\\isabe\\downloads\\rolesyusuariosreparaos-main\\views\\reservas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F30632-6D1B-4D06-BC14-E6A9D674F2C5}|..\\Rolesyusuariosreparaos-main\\Glamping_Addventure2.csproj|c:\\users\\isabe\\downloads\\rolesyusuariosreparaos-main\\views\\roles\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F30632-6D1B-4D06-BC14-E6A9D674F2C5}|..\\Rolesyusuariosreparaos-main\\Glamping_Addventure2.csproj|c:\\users\\isabe\\downloads\\rolesyusuariosreparaos-main\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F30632-6D1B-4D06-BC14-E6A9D674F2C5}|..\\Rolesyusuariosreparaos-main\\Glamping_Addventure2.csproj|c:\\users\\isabe\\downloads\\rolesyusuariosreparaos-main\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F30632-6D1B-4D06-BC14-E6A9D674F2C5}|..\\Rolesyusuariosreparaos-main\\Glamping_Addventure2.csproj|c:\\users\\isabe\\downloads\\rolesyusuariosreparaos-main\\views\\usuarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28F30632-6D1B-4D06-BC14-E6A9D674F2C5}|..\\Rolesyusuariosreparaos-main\\Glamping_Addventure2.csproj|c:\\users\\isabe\\downloads\\rolesyusuariosreparaos-main\\controllers\\abonoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,58 +37,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Roles\\Index.cshtml",
-              "RelativeDocumentMoniker": "..\\Rolesyusuariosreparaos-main\\Views\\Roles\\Index.cshtml",
-              "ToolTip": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Roles\\Index.cshtml",
-              "RelativeToolTip": "..\\Rolesyusuariosreparaos-main\\Views\\Roles\\Index.cshtml",
+              "Title": "Paquete.cs",
+              "DocumentMoniker": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Models\\Paquete.cs",
+              "RelativeDocumentMoniker": "..\\Rolesyusuariosreparaos-main\\Models\\Paquete.cs",
+              "ToolTip": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Models\\Paquete.cs",
+              "RelativeToolTip": "..\\Rolesyusuariosreparaos-main\\Models\\Paquete.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T12:54:49.639Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Roles\\Delete.cshtml",
-              "RelativeDocumentMoniker": "..\\Rolesyusuariosreparaos-main\\Views\\Roles\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Roles\\Delete.cshtml",
-              "RelativeToolTip": "..\\Rolesyusuariosreparaos-main\\Views\\Roles\\Delete.cshtml",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAqwG4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T12:36:50.567Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T17:58:42.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Habitacions\\Delete.cshtml",
-              "RelativeDocumentMoniker": "..\\Rolesyusuariosreparaos-main\\Views\\Habitacions\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Habitacions\\Delete.cshtml",
-              "RelativeToolTip": "..\\Rolesyusuariosreparaos-main\\Views\\Habitacions\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T12:43:54.949Z",
+              "Title": "Reserva.cs",
+              "DocumentMoniker": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Models\\Reserva.cs",
+              "RelativeDocumentMoniker": "..\\Rolesyusuariosreparaos-main\\Models\\Reserva.cs",
+              "ToolTip": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Models\\Reserva.cs",
+              "RelativeToolTip": "..\\Rolesyusuariosreparaos-main\\Models\\Reserva.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T17:58:06.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "..\\Rolesyusuariosreparaos-main\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "..\\Rolesyusuariosreparaos-main\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T17:30:26.865Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IniciarSesion.cshtml",
-              "DocumentMoniker": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Inicio\\IniciarSesion.cshtml",
-              "RelativeDocumentMoniker": "..\\Rolesyusuariosreparaos-main\\Views\\Inicio\\IniciarSesion.cshtml",
-              "ToolTip": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Inicio\\IniciarSesion.cshtml",
-              "RelativeToolTip": "..\\Rolesyusuariosreparaos-main\\Views\\Inicio\\IniciarSesion.cshtml",
-              "ViewState": "AgIAALMAAAAAAAAAAAAkwNUAAAADAAAAAAAAAA==",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Reservas\\Edit.cshtml",
+              "RelativeDocumentMoniker": "..\\Rolesyusuariosreparaos-main\\Views\\Reservas\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Reservas\\Edit.cshtml",
+              "RelativeToolTip": "..\\Rolesyusuariosreparaos-main\\Views\\Reservas\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T12:05:48.066Z",
+              "WhenOpened": "2024-11-29T17:18:18.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Roles\\Edit.cshtml",
+              "RelativeDocumentMoniker": "..\\Rolesyusuariosreparaos-main\\Views\\Roles\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Roles\\Edit.cshtml",
+              "RelativeToolTip": "..\\Rolesyusuariosreparaos-main\\Views\\Roles\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T16:11:15.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Usuarios\\Edit.cshtml",
+              "RelativeDocumentMoniker": "..\\Rolesyusuariosreparaos-main\\Views\\Usuarios\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Usuarios\\Edit.cshtml",
+              "RelativeToolTip": "..\\Rolesyusuariosreparaos-main\\Views\\Usuarios\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANgAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T16:12:31.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\Rolesyusuariosreparaos-main\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\Rolesyusuariosreparaos-main\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACsAAAAAZ2ZmZmYUwJoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T16:03:16.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReservasController.cs",
+              "DocumentMoniker": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Controllers\\ReservasController.cs",
+              "RelativeDocumentMoniker": "..\\Rolesyusuariosreparaos-main\\Controllers\\ReservasController.cs",
+              "ToolTip": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Controllers\\ReservasController.cs",
+              "RelativeToolTip": "..\\Rolesyusuariosreparaos-main\\Controllers\\ReservasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T15:35:17.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AbonoesController.cs",
+              "DocumentMoniker": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Controllers\\AbonoesController.cs",
+              "RelativeDocumentMoniker": "..\\Rolesyusuariosreparaos-main\\Controllers\\AbonoesController.cs",
+              "ToolTip": "C:\\Users\\isabe\\Downloads\\Rolesyusuariosreparaos-main\\Controllers\\AbonoesController.cs",
+              "RelativeToolTip": "..\\Rolesyusuariosreparaos-main\\Controllers\\AbonoesController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAIAwwDABAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T15:29:18.462Z",
               "EditorCaption": ""
             }
           ]
